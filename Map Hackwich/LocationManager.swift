@@ -15,4 +15,5 @@ class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
+    var geocoder = CLGeocoder()
 }
